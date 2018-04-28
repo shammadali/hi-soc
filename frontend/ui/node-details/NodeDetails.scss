@@ -1,0 +1,22 @@
+.node-details {
+  position: fixed;
+  right: 0;
+  bottom: 5vh;
+  width: 20vw;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__filter {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, .9);
+    order: 0;
+  }
+
+  &__hover {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .9);
+    order: 1;
+  }
+}

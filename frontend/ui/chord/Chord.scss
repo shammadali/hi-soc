@@ -1,0 +1,91 @@
+.filter-enabled {
+  .selected .arc {
+    mask: url(#mask-stripe);
+  }
+}
+
+.chart {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 !important;
+
+  background: #fff;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  > g {
+    will-change: transform;
+  }
+
+  #mask-stripe rect {
+    transform: translate(-50%, -50%);
+  }
+
+  .group {
+    will-change: opacity;
+
+    &.attribute-type {
+      text {
+        fill: #fff;
+      }
+    }
+
+    &:hover {
+      text {
+        font-weight: 800;
+      }
+    }
+
+    &.inactive {
+      opacity: .1;
+
+      filter: url(#grayscale);
+
+      text {
+        color: #dadada;
+      }
+
+      &.link {
+        opacity: .3;
+      }
+    }
+
+    text {
+      font-size: 10px;
+
+      cursor: pointer;
+    }
+
+    path {
+      fill-opacity: 1;
+    }
+  }
+
+  .arc {
+    cursor: pointer;
+
+    fill: #cec;
+    stroke: #fff;
+    stroke-width: 1px;
+
+    &.dashed {
+      fill: transparent;
+      stroke-width: 2;
+      stroke-dasharray: 2, 4;
+    }
+  }
+
+  .ribbon {
+    transition: all .15s ease-in-out;
+
+    stroke: rgba(0, 0, 0, .3);
+    stroke-width: .1px;
+    fill: rgb(198, 219, 239);
+    will-change: opacity;
+
+    &.inactive {
+      opacity: 0;
+    }
+  }
+}

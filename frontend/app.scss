@@ -1,0 +1,80 @@
+@import "~/vendor/bootstrap/css/bootstrap.min.css";
+@import "~/vendor/bootstrap/admin-lte/AdminLTE.css";
+@import "~/vendor/bootstrap/admin-lte/skin-blue.min.css";
+
+html,
+body {
+  height: 100vh;
+}
+
+/** Admin LTE overrides **/
+.main-sidebar,
+.left-sidebar,
+.fixed .content-wrapper,
+.fixed .main-header,
+.fixed .main-sidebar,
+.fixed .left-side {
+  position: static;
+  width: auto;
+  height: auto;
+  min-height: initial;
+  margin: 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  background-color: #fff;
+}
+
+.sidebar-form {
+  border: 0 none !important;
+
+  label {
+    color: #fff;
+  }
+}
+
+/** App layout **/
+.main-layout {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  &__content {
+    flex-grow: 1;
+  }
+}
+
+.sidebar-layout {
+  display: flex;
+
+  &__sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
+
+.chart-container {
+  position: relative;
+  padding: 0;
+}
+
+/*ContextMenu*/
+.contextmenu {
+  user-select: none;
+  padding: 10px 20px;
+
+  border: 1px solid #bcbcbc;
+  background-color: #fafafa;
+  box-shadow: 0 1px 5px #868686;
+}
+/*ContextMenu end*/
+

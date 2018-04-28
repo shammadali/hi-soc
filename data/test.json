@@ -1,0 +1,71 @@
+{
+  "links": [
+    {
+      "from": 1,
+      "to": 2,
+      "value": 1
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "value": 2
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "value": 3
+    },
+    {
+      "from": 4,
+      "to": 1,
+      "value": 4
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "value": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "label": "First",
+      "title": "First",
+      "group": 0,
+      "color": "red",
+      "font": {
+        "size": 50
+      }
+    },
+    {
+      "id": 2,
+      "label": "Second",
+      "title": "Second",
+      "group": 1,
+      "color": "green",
+      "font": {
+        "size": 50
+      }
+    },
+    {
+      "id": 3,
+      "label": "Third",
+      "title": "Third",
+      "group": 2,
+      "color": "yellow",
+      "font": {
+        "size": 50
+      }
+    },
+    {
+      "id": 4,
+      "label": "Fourth",
+      "title": "Fourth",
+      "group": 1,
+      "color": "maroon",
+      "font": {
+        "size": 50
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "sqlServer": {
+        "server": "localhost\\SQLEXPRESS",
+        "database": "FacebookData",
+        "user": "sa",
+        "password": "relapse"
+    },
+    "jsonDataDir": "data"
+}

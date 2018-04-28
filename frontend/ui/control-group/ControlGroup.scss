@@ -1,0 +1,28 @@
+.control-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15px;
+
+  justify-content: space-between;
+
+  .form-control,
+  .btn-default {
+    margin-bottom: 5px;
+  }
+
+  .btn {
+    height: auto !important;
+
+    &-apply {
+      color: #fff !important;
+      border-color: #367fa9 !important;
+      background-color: #3c8dbc !important;
+    }
+
+    &.active {
+      color: #fff !important;
+      background-color: #357ca5;
+    }
+  }
+}

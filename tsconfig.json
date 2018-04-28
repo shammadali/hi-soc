@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@frontend/app-state": [
+        "./frontend/app-state"
+      ],
+      "@frontend/attribute-tree": [
+        "./frontend/ui/chord/attribute-tree"
+      ],
+      "@backend/api": [
+        "./backend/business/interfaces"
+      ]
+    },
+    "lib": [
+      "es6",
+      "dom",
+      "es2016.array.include"
+    ],
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "pretty": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "allowJs": true
+  },
+  "include": [
+    "backend/**/*",
+    "frontend/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,40 @@
+.magnifier {
+  &__wrap {
+    position: relative;
+  }
+
+  &__lense {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: none;
+    overflow: hidden;
+
+    cursor: default;
+    user-select: none;
+
+    &.active {
+      display: block;
+    }
+
+    &-inner {
+      transform-origin: 0 0 0;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    z-index: 10000;
+    top: 10px;
+    left: 10px;
+
+    transition: all .3s;
+
+    &.active {
+      color: #fff !important;
+      background-color: #357ca5 !important;
+    }
+  }
+}
